@@ -38,7 +38,7 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   componentDidMount() {
-    axios.get(`http://www.mocky.io/v2/5e4c202b310000e1cad8bcda`).then((res) => {
+    axios.get(`http://www.mocky.io/v2/5e4cd8d82d00007f00c0d6bd`).then((res) => {
       let storeArray: Store[] = Object.values(res.data);
       this.setState({ data: storeArray });
     })
